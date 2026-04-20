@@ -61,7 +61,7 @@ export function Experience() {
 										<h3 className="text-xl font-semibold text-foreground">
 											{exp.title}
 										</h3>
-										<p className="text-accent">{exp.company}</p>
+										<p className="text-primary font-medium">{exp.company}</p>
 									</div>
 									<p className="text-muted-foreground leading-relaxed">
 										{exp.description}
