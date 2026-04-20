@@ -54,7 +54,7 @@ const skillCategories = [
 
 export function Skills() {
 	return (
-		<section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+		<section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-enter">
 			<div className="container mx-auto max-w-6xl">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-12 text-balance">
 					Skills & Technologies
@@ -65,10 +65,10 @@ export function Skills() {
 						return (
 							<Card
 								key={index}
-								className="p-6 hover:border-accent transition-colors"
+								className="group p-6 hover:border-primary/60 hover-lift"
 							>
 								<div className="flex items-start gap-4">
-									<div className="p-3 rounded-lg bg-accent/10 text-accent">
+									<div className="p-3 rounded-lg bg-primary/15 text-primary transition-transform duration-300 group-hover:scale-110">
 										<Icon className="h-6 w-6" />
 									</div>
 									<div className="flex-1">

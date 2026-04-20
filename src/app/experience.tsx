@@ -38,7 +38,10 @@ const experiences = [
 
 export function Experience() {
 	return (
-		<section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+		<section
+			id="experience"
+			className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-enter"
+		>
 			<div className="container mx-auto max-w-4xl">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-12 text-balance">
 					Experience
@@ -47,7 +50,7 @@ export function Experience() {
 					{experiences.map((exp, index) => (
 						<Card
 							key={index}
-							className="p-6 hover:border-accent transition-colors"
+							className="p-6 hover:border-primary/60 hover-lift"
 						>
 							<div className="flex flex-col sm:flex-row sm:items-start gap-4">
 								<div className="text-sm text-muted-foreground whitespace-nowrap sm:w-40">

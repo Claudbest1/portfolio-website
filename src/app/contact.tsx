@@ -1,20 +1,23 @@
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 
 export function Contact() {
 	return (
-		<section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+		<section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 section-enter">
 			<div className="container mx-auto max-w-4xl">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-8 text-balance">
 					Get In Touch
 				</h2>
-				<Card className="p-8 md:p-12">
+				<Card className="p-8 md:p-12 hover-lift">
 					<div className="space-y-6">
 						<p className="text-lg text-muted-foreground leading-relaxed">
 							I'm always interested in hearing about new projects and
 							opportunities. Whether you have a question or just want to say hi,
 							feel free to reach out!
+						</p>
+						<p className="text-sm text-muted-foreground">
+							Typically replying within 24-48 hours.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4">
 							<Button size="lg" asChild>
@@ -38,7 +41,7 @@ export function Contact() {
 									href="https://github.com/Claudbest1"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-muted-foreground hover:text-foreground transition-colors"
+									className="text-muted-foreground hover:text-primary transition-colors"
 								>
 									<Github className="h-6 w-6" />
 									<span className="sr-only">GitHub</span>
@@ -47,19 +50,10 @@ export function Contact() {
 									href="https://www.linkedin.com/in/claudius-odeyemi/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-muted-foreground hover:text-foreground transition-colors"
+									className="text-muted-foreground hover:text-primary transition-colors"
 								>
 									<Linkedin className="h-6 w-6" />
 									<span className="sr-only">LinkedIn</span>
-								</a>
-								<a
-									href="https://twitter.com"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-muted-foreground hover:text-foreground transition-colors"
-								>
-									<Twitter className="h-6 w-6" />
-									<span className="sr-only">Twitter</span>
 								</a>
 							</div>
 						</div>
@@ -67,8 +61,8 @@ export function Contact() {
 				</Card>
 				<footer className="mt-12 text-center text-sm text-muted-foreground">
 					<p>
-						© {new Date().getFullYear()} Frontend Developer Portfolio. Built
-						with Next.js & Tailwind CSS.
+						© {new Date().getFullYear()} Claudius Odeyemi Portfolio. Built with
+						Next.js & Tailwind CSS.
 					</p>
 				</footer>
 			</div>

@@ -26,9 +26,10 @@ export function Navigation() {
 
 	return (
 		<nav
+			aria-label="Primary"
 			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
 				isScrolled
-					? "bg-background/80 backdrop-blur-md border-b border-border"
+					? "bg-background/75 backdrop-blur-md border-b border-blue-400/20 shadow-md shadow-blue-600/10"
 					: "bg-transparent"
 			}`}
 		>
@@ -47,7 +48,7 @@ export function Navigation() {
 							<a
 								key={item.name}
 								href={item.href}
-								className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+								className="text-sm text-muted-foreground hover:text-primary transition-colors"
 							>
 								{item.name}
 							</a>
@@ -60,6 +61,9 @@ export function Navigation() {
 						size="icon"
 						className="md:hidden"
 						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+						aria-expanded={isMobileMenuOpen}
+						aria-controls="mobile-menu"
+						aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
 					>
 						{isMobileMenuOpen ? (
 							<X className="h-5 w-5" />
@@ -71,12 +75,12 @@ export function Navigation() {
 
 				{/* Mobile Navigation */}
 				{isMobileMenuOpen && (
-					<div className="md:hidden py-4 border-t border-border">
+					<div id="mobile-menu" className="md:hidden py-4 border-t border-border">
 						{navItems.map((item) => (
 							<a
 								key={item.name}
 								href={item.href}
-								className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+								className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
 								onClick={() => setIsMobileMenuOpen(false)}
 							>
 								{item.name}
