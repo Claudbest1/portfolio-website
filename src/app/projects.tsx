@@ -14,10 +14,10 @@ const projects = [
 	{
 		title: "E-Commerce Platform",
 		description:
-			"A full-featured e-commerce platform with product management, shopping cart, and secure checkout. Built with modern web technologies for optimal performance.",
-		image: "/tefind.png",
-		technologies: ["React", "TypeScript", "Tailwind CSS"],
-		liveUrl: "https://admin.tefind.com",
+			"Landing page for VYNT, Africa's first fashion marketplace. Highlights new arrivals, category and price browsing, and weekly deals to help shoppers discover authentic fashion at exclusive prices.",
+		image: "/vynt.png",
+		technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+		liveUrl: "https://landing.vyntapp.com",
 		githubUrl: "#",
 	},
 	{
@@ -39,12 +39,12 @@ const projects = [
 		githubUrl: "#",
 	},
 	{
-		title: "Portfolio CMS",
+		title: "Church Website",
 		description:
-			"Content management system for creative professionals to showcase their work. Includes admin panel, image optimization, and SEO features.",
-		image: "/portfolio-cms-admin-panel.jpg",
-		technologies: ["Next.js", "Sanity", "Vercel", "TypeScript"],
-		liveUrl: "#",
+			"A modern church website for RPF Global, built to welcome visitors and share the ministry's mission. Features live stream access, service updates, and clear pathways to connect with the community.",
+		image: "/rpfglobal.png",
+		technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+		liveUrl: "https://rpfglobal.org",
 		githubUrl: "#",
 	},
 ];
