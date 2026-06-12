@@ -4,15 +4,25 @@ import Background from "@/assets/images/background.jpg";
 
 export function Hero() {
 	return (
-		<section
-			className="relative isolate min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 section-enter"
-			style={{
-				backgroundImage: `url(${Background.src})`,
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-			}}
-		>
-			<div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-blue-900/60 to-slate-950/80" />
+		<section className="relative isolate min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 section-enter overflow-hidden">
+			<video
+				autoPlay
+				muted
+				loop
+				playsInline
+				poster={Background.src}
+				aria-hidden
+				className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
+			>
+				<source src="/coding.mp4" type="video/mp4" />
+			</video>
+			<div
+				className="absolute inset-0 hidden bg-cover bg-center motion-reduce:block"
+				style={{ backgroundImage: `url(${Background.src})` }}
+				aria-hidden
+			/>
+			<div className="absolute inset-0 bg-slate-950/65" />
+			<div className="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-950/70 to-slate-950/50" />
 			<div className="relative container mx-auto max-w-4xl text-center text-white">
 				<div className="space-y-6 animate-in fade-in slide-in-from-bottom-6 duration-700">
 					<h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance">
