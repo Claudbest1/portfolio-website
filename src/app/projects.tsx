@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const projects = [
 	{
-		title: "E-Commerce Platform",
+		title: "E-Commerce Platform ((In Development))",
 		description:
 			"Landing page for VYNT, Africa's first fashion marketplace. Highlights new arrivals, category and price browsing, and weekly deals to help shoppers discover authentic fashion at exclusive prices.",
 		image: "/vynt.png",
