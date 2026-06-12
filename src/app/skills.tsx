@@ -5,15 +5,7 @@ const skillCategories = [
 	{
 		icon: Code2,
 		title: "Frontend Development",
-		skills: [
-			"React",
-			"Next.js",
-			"TypeScript",
-			"JavaScript",
-			"Vue.js",
-			"HTML5",
-			"CSS3",
-		],
+		skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"],
 	},
 	{
 		icon: Palette,
@@ -54,7 +46,10 @@ const skillCategories = [
 
 export function Skills() {
 	return (
-		<section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-enter">
+		<section
+			id="skills"
+			className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 section-enter"
+		>
 			<div className="container mx-auto max-w-6xl">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-12 text-balance">
 					Skills & Technologies
